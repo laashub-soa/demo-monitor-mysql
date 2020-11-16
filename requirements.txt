@@ -1,0 +1,7 @@
+APScheduler==3.6.3
+DBUtils==1.4
+PyMySQL==0.10.1
+pytz==2020.4
+PyYAML==5.3.1
+six==1.15.0
+tzlocal==2.1
