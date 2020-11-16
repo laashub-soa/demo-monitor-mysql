@@ -7,7 +7,7 @@ from datetime import datetime
 
 if __name__ == '__main__':
     command_template = """
-    mysql -h {host} -P {port} -u {username} -p{password} -e "select * from information_schema.processlist where info is not  null and info not like 'select * from information_schema.processlist%';"
+    mysql -h {host} -P {port} -u {username} -p{password} -e "show processlist;"
     """
     base_dir = "/data/tristan/query_mysql_process"
     if not os.path.exists(base_dir):
