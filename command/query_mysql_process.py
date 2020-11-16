@@ -41,8 +41,8 @@ if __name__ == '__main__':
 
 
     while True:
-        print("开始查询")
         out_log = os.popen(command).read()
+        print("开始查询: " + out_log[:100])
         if out_log != "":
             write_result(out_log)
         time.sleep(5)
